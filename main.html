@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            width:100%;
+            background-color: rgba(238, 235, 235,0.6);
+        }
+        #full_box{
+            width: 60%;
+            border: 1px solid black;/*지우기*/
+            margin: 0 auto;
+            background-color: white;
+
+        }
+        .header_full_box{
+            border: 1px solid black;/*지우기*/
+            display: flex;
+        }
+        .header_nav{
+            border: 1px solid black;/*지우기*/
+            height: 40px;
+            width: 30%;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        .header_nav input{
+            height: 35px;
+            border-radius: 10px;
+        }
+        /*헤더 끝*/
+
+        /*메인 슬라이드 배너 시작*/
+        .main_banner{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .slides-wrap{
+            width: 1000px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 15px;
+            display: flex;  /*떨어져있던 li들이 세로로 모여지고 <> wrap상자안으로 올라온다*/
+            overflow: hidden;
+            position: relative;
+
+        }
+        .slide-box{
+            display: flex; /*li들이 가로로 정렬*/
+            width: 100%;
+            height: 100%;
+            margin: 0; /*마진과 패딩을 주면 부모상자에 맞게 된다 . <>는 옆으로 빠진다*/
+            padding: 0;
+            border: 1px solid black;
+            position: absolute; /*<> 안으로 들어온다*/
+            left: 0px; /*이거의 의미 모르겠음*/
+        }
+        li {
+            list-style: none;
+        }
+        
+        .slide-img {
+            width: 1000px; /*slides-wrap 크기에 맞추기*/
+            height: 200px; /*slides-wrap 크기에 맞추기*/
+            /* border: 1px solid black*/
+        }
+        li:first-child > .slide-img {
+            background-image: url(/img/배너.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        li:nth-child(2) > .slide-img {
+            background-image: url(/img/배너1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        li:last-child > .slide-img {
+            background-image: url(/img/배너3\ 수정.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .prev,
+        .next {
+            position: absolute;
+            font-size: 50px;
+            top: 90px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+            
+        .prev {
+            left: 0px;
+        }
+        .next {
+            right: 0px;
+        }
+
+        /*검색창 css*/
+        .input_div{
+            width: 90%;
+            border: 1px solid gray;
+            margin-top: 5px;
+            display: flex;
+            margin:0 auto;
+            margin-top: 10px;
+            border-radius: 10px;
+         
+        }
+        .input_div input{
+            height: 35px;
+            width: 90%;
+            border: none;
+            margin-left: 5px;
+            
+        }
+
+        /*main css*/
+        .main_full{
+            width: 98%;
+            border: 1px solid black; 
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 10px;
+            display: flex;
+        }
+        .main1{
+            border: 1px solid black; 
+            width: 50%;
+            height: 100%;
+
+        }
+        .main2{
+            border: 1px solid black; 
+            width: 50%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="full_box"><!--전체 총 div-->
+        <div class="header_full_box">
+            <div class="header_nav"><img src="/img/로고.png" width="100px" height="40px"></div>
+            <div class="header_nav">운동시설</div>
+            <div class="header_nav">마이페이지</div>
+            <div class="header_nav">공지사항</div>
+            <div class="header_nav">FAQ</div>
+            <div class="header_nav"><input type="text" placeholder=" 어떤 서비스가 필요하세요?"></div>
+            <div class="header_nav">로그인</div>
+            <div class="header_nav">회원가입</div>
+        </div><!--header-->
+
+        <div class="main_banner"><!--banner-->
+            <div class="slides-wrap">
+                <ul class="slide-box">
+                  <li>
+                    <div class="slide-img"></div>
+                  </li>
+                  <li>
+                    <div class="slide-img"></div>
+                  </li>
+                  <li>
+                    <div class="slide-img"></div>
+                  </li>
+                </ul>
+                <!-- &lt, &gt는 html에서 < , > 를 나타낼때 사용 -->
+                <div class="prev">&lt</div>
+                <div class="next">&gt</div>
+              </div>
+        </div>
+
+
+        <div class="input_div"><!--search-->
+            <input type="text" placeholder="어떤 운동을 찾고 계신가요?">
+            <div class="search_img">
+                <img src="https://cdn-icons-png.flaticon.com/512/2866/2866321.png" width="30px" >
+            </div>
+        </div><!--search-->
+
+
+        
+        <!--Main-->
+        <div class="main_full"><!--main div1-->
+            <div class="main1">
+                <span>내주변 운동시설</span>
+            </div>
+
+            <div class="main2"><!--main div2-->
+                <span>지도에서 찾아보기</span>
+            </div>
+        </div>
+
+        <div><!--under icon-->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div><!--남색 긴 사진-->
+            <img>
+        </div>
+
+        <div><!--footer-->
+            <div> <!--footer div1-->
+                <div>로고이미지</div>
+                <span>(주)코리아아이티학원</span>
+                <span>서울시 노원구 블라블라</span>
+                <span>헤헤헤헤</span>
+                <span>요건모르겠찌</span>
+            </div>
+
+            <div><!--footer div2-->
+                <div>sns로고1</div>
+                <div>sns로고2</div>
+                <div>sns로고3</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script>
+let $slideBox = $('.slide-box');
+let $slideImgs = $('.slide-img');
+
+let slideWidth = 1000; 
+let currentIdx = 0;
+let slideCnt = $slideImgs.length;
+console.log('slideCnt : ' + slideCnt);
+
+checkEnd();
+
+$('.next').on('click', function () {
+  console.log('aaa');
+  currentIdx++;
+  console.log('currentIdx : ' + currentIdx);
+  $slideBox.css('left', -(currentIdx * slideWidth));
+  $slideBox.css('transition', '0.5s ease');
+  checkEnd();
+});
+
+$('.prev').on('click', function () {
+  console.log('bbb');
+  currentIdx--;
+  console.log('currentIdx : ' + currentIdx);
+  $slideBox.css('left', -(currentIdx * slideWidth));
+  $slideBox.css('transition', '0.5s ease');
+  checkEnd();
+});
+
+function checkEnd() {
+  if (currentIdx <= 0) {
+    $('.prev').css('display', 'none');
+  } else {
+    $('.prev').css('display', 'block');
+  }
+
+  if (currentIdx >= slideCnt - 1) {
+    $('.next').css('display', 'none');
+  } else {
+    $('.next').css('display', 'block');
+  }
+}
+</script>
+</html>
