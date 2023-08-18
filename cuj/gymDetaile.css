@@ -1,0 +1,125 @@
+html,body{
+    width:100%;
+    background-color: rgba(238, 235, 235,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: rgba(238, 235, 235,0.6);
+}
+/*페이지 상단 이미지 들어가는 영역*/
+.img-container{
+    width: 100%;
+    height: 360px;
+}
+#main-img{
+    width: 100%;
+    height: 100%;
+}
+/**/
+
+/*시설명과 주소, 가격이 들어가는 영역*/
+.title-container{
+    width: 95%;
+    margin: 10px 0;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.addr-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+/**/
+
+/*내용이 들어가는 영역*/
+.content{
+    width: 90%;
+    background-color: rgba(238, 235, 235,0.6);
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 10px 0;
+}
+/**/
+
+/*공지사항이 들어가는 영역*/
+.subTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/**/
+.content,.notice-content,.time-content{
+    min-height: 50px;
+    line-height: 25px;
+}
+
+
+.place{
+    width: 100%;
+    height: 450px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#place-img{
+    width: 75%;
+    height: 100%;
+}
+
+.btn-container{
+    width: 95%;
+    height: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+button[type="submit"]{
+    width: 50px;
+    height: 25px;
+    margin: 0 0 10px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#update{
+    background-color: rgb(127, 142, 251);
+    color: white;
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 5px;
+}
+#update:hover{
+    background-color: rgb(115, 131, 250);;
+}
+#delete{
+    background-color: rgb(245, 73, 73);
+    color: white;
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 5px;
+}
+#delete:hover{
+    background-color: rgb(245, 50, 50);
+}
