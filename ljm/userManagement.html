@@ -22,11 +22,9 @@
             width:60%;
             height:100%;
             margin:auto;
-            background-color: white;
-            
-           
-            
+            background-color: white; 
         }
+
        .title-container{
         width:100%;
         border-bottom: 1px solid rgba(179, 176, 176,0.7);
@@ -43,16 +41,26 @@
        }
        .user-info-container{
         width:100%;
-      
         display: flex;
         justify-content: center;
 
        }
+       td,th{
+       width:50px;
+       height:30px;
+       }
+       .id,.pw,.phone{
+        width:200px;
+       }
+       .name{
+        width:90px;
+       }
+
        
     </style>
 </head>
 <body>
-    <!--페이징 처리 해야하고, 한 페이지에 35명의 정보-->
+    <!--페이징 처리 해야하고, 한 페이지에 20명의 정보-->
     <div class="container">
         <div class="title-container">
             <h2>회원관리</h2>
@@ -64,15 +72,15 @@
         <div class="user-info-container">
             <table border="1">
                 <th>번호</th>
-                <th>이름</th>
-                <th>아이디</th>
-                <th>패스워드</th>
-                <th>핸드폰번호</th>
+                <th class="name">이름</th>
+                <th class="id">아이디</th>
+                <th class="pw">패스워드</th>
+                <th class="phone">핸드폰번호</th>
                 <th colspan="2">구분</th>
                 
                 <tr><!-- 첫번째 줄 시작 -->
                     <td>1</td>
-                    <td>이종민</td>
+                    <td >이종민</td>
                     <td>flower@naver.com</td>
                     <td>12345678</td>
                     <td>010-1234-1234</td>
@@ -88,9 +96,73 @@
                     <td>일반</td>
                     <td><button>삭제</button></td>   
                 </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td>이종민</td>
+                    <td>flower@naver.com</td>
+                    <td>12345678</td>
+                    <td>010-1234-1234</td>
+                    <td>일반</td>
+                    <td><button>삭제</button></td>   
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>이종민</td>
+                    <td>flower@naver.com</td>
+                    <td>12345678</td>
+                    <td>010-1234-1234</td>
+                    <td>일반</td>
+                    <td><button>삭제</button></td>   
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>이종민</td>
+                    <td>flower@naver.com</td>
+                    <td>12345678</td>
+                    <td>010-1234-1234</td>
+                    <td>일반</td>
+                    <td><button>삭제</button></td>   
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>이종민</td>
+                    <td>flower@naver.com</td>
+                    <td>12345678</td>
+                    <td>010-1234-1234</td>
+                    <td>일반</td>
+                    <td><button>삭제</button></td>   
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>이종민</td>
+                    <td>flower@naver.com</td>
+                    <td>12345678</td>
+                    <td>010-1234-1234</td>
+                    <td>일반</td>
+                    <td><button>삭제</button></td>   
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>이종민</td>
+                    <td>flower@naver.com</td>
+                    <td>12345678</td>
+                    <td>010-1234-1234</td>
+                    <td>일반</td>
+                    <td><button>삭제</button></td>   
+                </tr>
+    
+                <tr>
+                    <td>1</td>
+                    <td>이종민</td>
+                    <td>flower@naver.com</td>
+                    <td>12345678</td>
+                    <td>010-1234-1234</td>
+                    <td>일반</td>
+                    <td><button>삭제</button></td>   
+                </tr>
     
                
-    
                 <tr>
                     <td>1</td>
                     <td>이종민</td>
@@ -111,130 +183,7 @@
                     <td><button>삭제</button></td>   
                 </tr>
     
-               
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>시설</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                 <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>시설</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
+              
                 <tr>
                     <td>1</td>
                     <td>이종민</td>
@@ -264,17 +213,7 @@
                     <td>일반</td>
                     <td><button>삭제</button></td>   
                 </tr>
-    
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>시설</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
+                
                 <tr>
                     <td>1</td>
                     <td>이종민</td>
@@ -285,6 +224,7 @@
                     <td><button>삭제</button></td>   
                 </tr>
     
+                
                 <tr>
                     <td>1</td>
                     <td>이종민</td>
@@ -295,16 +235,7 @@
                     <td><button>삭제</button></td>   
                 </tr>
     
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>시설</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
+                
                 <tr>
                     <td>1</td>
                     <td>이종민</td>
@@ -315,25 +246,6 @@
                     <td><button>삭제</button></td>   
                 </tr>
     
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-    
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
     
                 <tr>
                     <td>1</td>
@@ -362,51 +274,9 @@
                     <td>일반</td>
                     <td><button>삭제</button></td>   
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>이종민</td>
-                    <td>flower@naver.com</td>
-                    <td>12345678</td>
-                    <td>010-1234-1234</td>
-                    <td>일반</td>
-                    <td><button>삭제</button></td>   
-                </tr>
+              
+                
+                
             
             </table>
         </div>
