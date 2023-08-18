@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색창</title>
+    <style>
+         *{
+            margin:0;
+           
+           
+        }
+        html,body{
+            width:100%;
+            height:100%;
+            background-color: rgba(238, 235, 235,0.6);
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            width:60%;
+            height:100%;
+            margin:auto;
+            background-color: white;
+            padding: 13px;
+           
+            
+        }
+        .search-box{
+            width:80%;
+           
+        }
+        .search-form{
+            width:100%;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .search-bar{
+            width:90%;
+            height:40px;
+            border:3px solid rgb(172, 171, 171);
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .commend-search-box{
+            width:95%;
+            height:35px;
+            border-bottom: 1px solid rgb(168, 168, 168);
+            margin:auto;
+        }
+        .commend-search-text{
+            margin:20px;
+            font-size: 19px;
+            font-weight: bold;
+            color:blue;
+        }
+        .search-title{
+            margin-left:45px;
+            margin-top:10px;
+        }
+        .commend-content-box{
+            display: flex;
+            margin-left: 25px;
+            margin-top:7px;
+
+        }
+        .commend-content{
+            width:7%;
+            height:35px;
+            background-color: rgba(177, 176, 176,0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            margin:7px;
+            font-size: 17px;
+            font-weight: bold;
+            color: rgb(59, 59, 59);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="search-title">어떤 운동을 찾으세요?</h2>
+        <br>
+       <div class="search-box">
+        <form action="#" class="search-form">
+            <input class="search-bar" type="text"/>
+        </form>
+       </div>
+           
+        <div class="commend-search-box">
+            <p class="commend-search-text"><strong>추천 검색어</strong></p>
+        </div>
+        <div class="commend-content-box">
+            <div class="commend-content">
+                헬스
+            </div>
+            <div class="commend-content">
+                요가
+            </div>
+            <div class="commend-content">
+                필라테스
+            </div>
+            <div class="commend-content">
+                주짓수
+            </div>
+            <div class="commend-content">
+                골프
+            </div>
+            <div class="commend-content">
+                수영
+            </div>
+        </div>
+    </div>
+</body>
+</html>
