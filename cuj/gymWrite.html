@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gymWrite</title>
+    <link rel="stylesheet" href="gymWrite.css">
+</head>
+<body>
+    <form><!--서버에 보내기 위해 form 태그를 사용함--> 
+        <table><!--테이블 이용 10행, 2열의 표를 만듬-->
+            <tr><!--tr은 하나의 행을 의미함-->
+                <th colspan="2">운동시설 등록</th><!--th 제목의 셀을 의미함, colspan=2는 2칸의 셀은 가로로 병합을 의미-->
+            </tr>
+            <tr>
+                <th>시설명</th>
+                <td><input type="text" placeholder="시설명을 입력해주세요" id="title"></td><!--td는 하나의 셀을 의미-->
+                <!--input text를 이용해 text를 받을 수 있고 placeholder를 이용해 작성 전 안내문구를 표시할 수 있다-->
+            </tr>
+            <tr>
+                <th>시설사진</th>
+                <td><input type="file" id="photo"></td>
+                <!--input file을 이용하여 파일을 업로드하여 사진을 불러올 수 있도록 함-->
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td><input type="text" placeholder="주소를을 입력해주세요" id="address"></td>
+                <!--input text를 이용해 text를 받을 수 있고 placeholder를 이용해 작성 전 안내문구를 표시할 수 있다-->
+            </tr>
+            <tr>
+                <th>가격</th>
+                <td><input type="text" placeholder="가격을 입력해주세요" id="price"></td>
+                <!--input text를 이용해 text를 받을 수 있고 placeholder를 이용해 작성 전 안내문구를 표시할 수 있다-->
+            </tr>
+            <tr>
+                <th>카테고리</th>
+                <td>
+                    <!--type checkbox를 이용하여 카테고리를 체크 분류할 수 있게 합니다-->
+                    <input type="checkbox" id="category" value="헬스" checked>헬스
+                    <input type="checkbox" id="category" value="요가">요가
+                    <input type="checkbox" id="category" value="크로스핏">크로스핏
+                    <input type="checkbox" id="category" value="복싱">복싱<br>
+                    <input type="checkbox" id="category" value="필라테스">필라테스
+                    <input type="checkbox" id="category" value="주짓수">주짓수
+                    <input type="checkbox" id="category" value="골프">골프
+                    <input type="checkbox" id="category" value="수영">수영
+                </td>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <!--textarea를 사용해 긴글을 작성 받게 합니다-->
+                <td><textarea id="content" placeholder="내용을 입력해주세요"></textarea></td>
+            </tr>
+            <tr>
+                <th>공지사항</th>
+                <!--textarea를 사용해 긴글을 작성 받게 합니다-->
+                <td><textarea id="notice" placeholder="공지사항을 입력해주세요"></textarea></td>
+            </tr>
+            <tr>
+                <th>운영시간</th>
+                <td><textarea id="time" placeholder="운영시간을 입력해주세요"></textarea></td>
+                <!--input text를 이용해 text를 받을 수 있고 placeholder를 이용해 작성 전 안내문구를 표시할 수 있다-->
+            </tr>
+            <tr>
+                <th>위치</th>
+                <td><input type="file" id="place"></td>
+                <!--input file을 이용하여 파일을 업로드하여 사진을 불러올 수 있도록 함-->
+            </tr>
+        </table>
+            <button type="submit" value="등록"> 등록 </button>
+            <!--button type=submit을 이용하여 입력한 값들을 전송합니다-->
+    </form>
+</body>
+</html>
