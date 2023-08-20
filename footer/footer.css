@@ -1,0 +1,35 @@
+/*풋터*/
+.footer_full_div{
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+    background-color: rgba(238, 235, 235,0.6);
+}
+.footer1{
+
+    height: 180px;
+    width: 50%;
+    margin-top: 20px;
+    margin: 10px;
+   
+}
+.name{
+    font-weight: bolder;
+    font-size: 15px !important;
+}
+.footer1 div{
+    color: #58595B;
+    font-size: 10px;
+}
+
+.footer2{
+    height: 180px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.sns{
+     height: 180px;
+     width: 35px;
+     margin: 20px;
+}
