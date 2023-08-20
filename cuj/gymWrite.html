@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gymWrite</title>
     <link rel="stylesheet" href="gymWrite.css">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script defer src="gymWrite.js"></script>
 </head>
 <body>
@@ -24,13 +25,27 @@
                 <!--input file을 이용하여 파일을 업로드하여 사진을 불러올 수 있도록 함-->
             </tr>
             <tr>
-                <th>주소</th>
-                <td><input type="text" placeholder="주소를을 입력해주세요" id="address" name="address"></td>
+                <th rowspan="3">주소</th>
+                <!-- <td><input type="text" placeholder="주소를을 입력해주세요" id="address" name="address"></td> -->
                 <!--input text를 이용해 text를 받을 수 있고 placeholder를 이용해 작성 전 안내문구를 표시할 수 있다-->
+                <td>                    
+                    <input type="text" id="sample6_postcode" placeholder="우편번호">
+                    <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="sample6_address" placeholder="주소"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="sample6_detailAddress" placeholder="상세주소">
+                    <input type="text" id="sample6_extraAddress" placeholder="참고항목">
+                </td>
             </tr>
             <tr>
                 <th>가격</th>
-                <td><input type="text" placeholder="가격을 숫자만으로 입력해주세요. ex)5000" id="price" name="price"></td>
+                <td><input type="text" placeholder="가격을 숫자만으로 입력해주세요. ex)5000" id="price" name="price" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"></td>
+                <!-- 정규식을 이용하여 입력받은 값을 숫자로만 입력 받는다 -->
                 <!--input text를 이용해 text를 받을 수 있고 placeholder를 이용해 작성 전 안내문구를 표시할 수 있다-->
             </tr>
             <tr>
