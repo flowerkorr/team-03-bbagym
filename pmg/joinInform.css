@@ -10,7 +10,6 @@ html,body{
 
 .container{
     width: 60%;
-    min-height: 100vh;
     margin: auto;
     background-color: white;
 }
@@ -19,14 +18,16 @@ html,body{
     display: flex;
     padding: 2%;
 }
-.id-container,.password-container{
+.inform-container{
     color: gray;
 }
-.id-text,.password-text{
+.inform-text{
     padding: 10px 0 0 2%;
     font-size: 15px;
+    color: gray;
 }
-.id,.password,.login-btn{
+.inform{
+    width: 92%;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -34,53 +35,40 @@ html,body{
     border-radius: 10px;
     border-style: none;
     font-size: 15px;
-    padding: 0 2%;
-}
-.id,.password{
-    width: 92%;
     background-color: rgba(238, 235, 235, 0.6);
     border: 1px solid gainsboro;
+    padding: 0 2%;
 }
-.login-btn{
-    width: 96%;
-    margin-top: 40px;
+.join-btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
     border-style: none;
+    font-size: 15px;
     background-color: rgb(179, 188, 255);
-    /* background-color: rgb(84, 103, 245); */
     color: white;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-.find-container{
+.kind-label{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
+    margin: 10px 0;
 }
-.find-id,.find-password,.join{
+.kind-check{
     display: flex;
     flex-direction: column;
-    font-size: 13px;
-    color: gray;
-    font-weight: bold;
-    transform-style: none;
-    margin: 0 8px;
+    margin: 5px 1% 5px 2%;
 }
-
-.banner{
-    width: 100%;
-    height: 200px;
-    margin: 50px 0;
-    cursor: pointer;
-}
-
-.terms{
+.kind{
     display: flex;
-    justify-content: center;
-    font-size: 10px;
-    color: gray;
-    padding: 0 2% 30px 2%;
+    flex-direction: column;
+}
+.kind-text{
+    margin-bottom: 10px;
 }
