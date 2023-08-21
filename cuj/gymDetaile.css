@@ -31,6 +31,14 @@ hr{
 }
 /**/
 
+pre{
+    width: 100%;
+    white-space: pre-wrap;/*pre 속성값과 동일하게 연속된 띄어쓰기와 들여쓰기, 줄바꿈을 있는 그대로 보존합니다*/
+    word-wrap: break-word;/*요소의 경계에서 break point가 아니어도 줄바꿈을 합니다.*/
+}
+
+
+
 /*시설명과 주소, 가격이 들어가는 영역*/
 .title-container{
     width: 95%;
