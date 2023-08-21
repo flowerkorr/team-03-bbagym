@@ -17,6 +17,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 input[type="checkbox"]{
     margin: 5px 10px;
@@ -25,37 +26,59 @@ input[type="checkbox"]{
 table{
     border: 1px solid black;
     border-collapse: collapse; /*테두리 간에 간격은 없애준다*/
-    width: 700px;
+    width: 75%;
     margin: 20px auto 0;
 }
 th,td{
     border: 1px solid black;
-    height: 30px;
+    height: 35px;
 }
 th{
     background-color: rgb(127, 142, 251);
     color: white;
 }
+input[type="text"]:not(#sample6_postcode,#sample6_address,#sample6_detailAddress,#sample6_extraAddress){/*input type=text 태그로 나눔*/
+    width: 97%;
+    height: 95%;
+    border: none;/*테투리 표시를 하지 않는다*/
+}
+input:focus {outline: none;}/*클릭시 테투리를 제거*/
+textarea:focus {outline: none;}/*클릭시 테투리를 제거*/
+
 input[type="text"]{
-    width: 100%;
-    height: 100%;
+    padding-left: 5px;
+}
+#sample6_address{
+    width: 97%;
+}
+#sample6_detailAddress{
     border: none;
+    border-right: 1px solid black;
+    height: 95%;
+}
+#sample6_postcode,#sample6_detailAddress,#sample6_extraAddress{
+    width: 45%;
+}
+#sample6_postcode,#sample6_address,#sample6_extraAddress{
+    border: none;
+    height: 95%;
 }
 textarea::placeholder{
-    line-height: 300px;
+    line-height: 300px;/*줄간격 높이를 정해서 중앙위치쯤 오게함*/
 }
 textarea::placeholder,input::placeholder,
 input[type="file"]{
     padding-left: 10px;
 }
 textarea{
-    width: 100%;
+    width: 97%;
     height: 300px;
     resize: none;/*모서리 하단에 크기를 조절하는 것을 막아줌*/
-    border: none;
+    border: none;/*테두리 표시를 안함*/
+    padding: 5px;
 }
 #time{
-    width: 100%;
+    width: 97%;
     height: 150px;
     resize: none;/*모서리 하단에 크기를 조절하는 것을 막아줌*/
     border: none;
@@ -63,17 +86,24 @@ textarea{
 #time::placeholder{
     line-height: 150px;
 }
+.btn-container{
+    width: 75%;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
 button{
     width: 100px;
     height: 30px;
     color: white;
     font-weight: bold;
-    margin: 10px 0 10px 820px;
     background-color: rgb(127, 142, 251);
     border: 1px solid black;
-    border-radius: 5%;
-    cursor: pointer;
+    border-radius: 5px;/*테두리를 둥글게 설정*/
+    cursor: pointer;/*버튼에 마우스 커서포인트를 이용해 손가락모양으로 변경*/
 }
 button:hover{
-    background-color: rgb(115, 131, 250);;
+    background-color: rgb(115, 131, 250);;/*hover를 이용하여 마우스 포인터가 이동했을 때 진한 색상으로 변경*/
 }
