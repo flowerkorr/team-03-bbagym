@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    font-family: 'LINESeedKR-Bd';
+}
 html,body{
     width:100%;
     background-color: rgba(238, 235, 235,0.6);
@@ -39,6 +48,8 @@ input:focus {outline: none;}/*클릭시 테투리를 제거*/
 .input-border{
     border: 2px solid rgb(127, 142, 251);    
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 #btn-span{
     background-color: rgb(127, 142, 251);
@@ -48,9 +59,9 @@ form{
     display: flex;
 }
 
-.btn{
+/* .btn{
     margin-left: 5px;
-}
+} */
 button{
     background-color: rgb(127, 142, 251);
     height: 30px;    
