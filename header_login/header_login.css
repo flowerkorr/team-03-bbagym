@@ -1,0 +1,25 @@
+/*전체박스 안에 넣으면 됩니다.*/
+/*헤더 시작*/
+a{
+    text-decoration: none;
+    color: #58595B;
+}
+.header_full_box{
+    display: flex;
+    margin-bottom: 10px;
+}
+.header_nav{
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.header_nav input{
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+}
+/*헤더 끝*/
