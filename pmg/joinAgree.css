@@ -18,8 +18,9 @@ h2{
     font-weight: normal;
     padding: 2% 0 0 2%;
 }
-.inform-container{
+.agree-container{
     /* color: gray; */
+    padding: 2%;
 }
 .inform-text{
     padding: 10px 0 0 2%;
@@ -65,12 +66,25 @@ h2{
     flex-direction: column;
     margin: 5px 1% 5px 2%;
 }
+
+.personal-inform{
+    width: 96%;
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 10px 0;
+}
 h3{
     display: inline;
 }
-.agreement{
-    display: inline;
-}
+
 .kind-text{
     margin-bottom: 10px;
+}
+.agree-text{
+    font-size: 15px;
+}
+.agree-must{
+    font-size: 13px;
+    color: rgb(84, 103, 245);
 }
