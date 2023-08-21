@@ -105,5 +105,5 @@ button{
     cursor: pointer;/*버튼에 마우스 커서포인트를 이용해 손가락모양으로 변경*/
 }
 button:hover{
-    background-color: rgb(115, 131, 250);;/*hover를 이용하여 마우스 포인터가 이동했을 때 진한 색상으로 변경*/
+    background-color: rgb(115, 131, 250);/*hover를 이용하여 마우스 포인터가 이동했을 때 진한 색상으로 변경*/
 }
