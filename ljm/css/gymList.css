@@ -25,7 +25,7 @@ a{
 .list-content{
     display: flex;
     width:45%;
-    height: 110px; /*노트북, 컴퓨터 따라서 크기 조절해야함*/
+    height: 140px; /*노트북, 컴퓨터 따라서 크기 조절해야함*/
     margin:auto;
     margin-top:20px;
 }
