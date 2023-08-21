@@ -10,23 +10,25 @@ html,body{
 
 .container{
     width: 60%;
+    min-height: 100vh;
     margin: auto;
     background-color: white;
 }
 
-.logo{
-    display: flex;
-    padding: 2%;
+h2{
+    font-weight: normal;
+    padding: 2% 0 0 2%;
 }
-.id-container,.password-container,.password-test-container,.name-container,.phone-container,.nickname-container,.kind-container{
+
+.phone-container{
     color: gray;
 }
-.id-text,.password-text,.password-test-text,.name-text,.phone-text,.nickname-text,.kind-text{
+.phone-text{
     padding: 10px 0 0 2%;
+    margin: 50px 0 0 0;
     font-size: 15px;
 }
-.id,.password,.password-test,.name,.phone,.nickname{
-    width: 96%;
+.phone,.find-id-btn{
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -34,31 +36,22 @@ html,body{
     border-radius: 10px;
     border-style: none;
     font-size: 15px;
+    padding: 0 2%;
 }
-.id,.password,.password-test,.name,.phone,.nickname{
+.phone{
+    width: 92%;
     background-color: rgba(238, 235, 235, 0.6);
     border: 1px solid gainsboro;
 }
-.join-btn{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
+.find-id-btn{
+    width: 96%;
+    margin-top: 40px;
     border-style: none;
-    font-size: 15px;
     background-color: rgb(179, 188, 255);
+    /* background-color: rgb(84, 103, 245); */
     color: white;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-
-.kind-label{
-    display: flex;
-    flex-direction: row;
-}
-.kind{
-    display: flex;
-    flex-direction: column;
 }
