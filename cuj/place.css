@@ -15,7 +15,7 @@ html,body{
     align-items: center;
 }
 a{
-    text-decoration: none;/*태그 밑줄 없애기*/
+    text-decoration: none;
     color: black;
 }
 .addr{
