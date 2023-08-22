@@ -1,7 +1,7 @@
 
 *{
     margin:0;
-    padding:0;
+  
 }
 a{
     text-decoration: none;
@@ -10,12 +10,14 @@ a{
 html,body{
     width:100%;
     background-color: rgba(238, 235, 235,0.6);
+ 
 }
+
 #full_box{
     width: 60%;
     margin: 0 auto;
     background-color: white;
-
+    padding-top: 4%;
 }
 .header_full_box{
     display: flex;
@@ -43,9 +45,9 @@ html,body{
 }
 .slides-wrap{
     width: 1400px;
-    height: 200px;
-    border: 1px solid black;
-    border-radius: 15px;
+    height: 250px;
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 5px;
     display: flex;  
     overflow: hidden;
     position: relative;
@@ -66,7 +68,7 @@ li {
 
 .slide-img {
     width: 1400px; /*slides-wrap 크기에 맞추기*/
-    height: 200px; /*slides-wrap 크기에 맞추기*/
+    height: 250px; /*slides-wrap 크기에 맞추기*/
 }
 li:first-child > .slide-img {
     background-image: url(/img/배너1.jpg);
@@ -94,9 +96,21 @@ li:last-child > .slide-img {
     
 .prev {
     left: 0px;
+    color:rgba(255,255,255,0.6);
+}
+.prev:hover {
+    left: 0px;
+    color:rgb(255,255,255);
+   
 }
 .next {
     right: 0px;
+    color:rgba(255,255,255,0.6);
+}
+
+.next:hover {
+    right: 0px;
+    color:rgb(255,255,255);
 }
 
 /*검색창 css*/
