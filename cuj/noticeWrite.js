@@ -27,5 +27,6 @@ button.addEventListener('click',function(){
         button.type = "submit";
         // 폼을 제출
         button.closest('form').submit();
+        alert('등록 되었습니다');
     }
 });

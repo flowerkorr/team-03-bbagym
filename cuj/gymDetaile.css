@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    font-family: 'LINESeedKR-Bd';
+}
 html,body{
     width:100%;
     background-color: rgba(238, 235, 235,0.6);
@@ -30,6 +39,14 @@ hr{
     height: 100%;
 }
 /**/
+
+pre{
+    width: 100%;
+    white-space: pre-wrap;/*pre 속성값과 동일하게 연속된 띄어쓰기와 들여쓰기, 줄바꿈을 있는 그대로 보존합니다*/
+    word-wrap: break-word;/*요소의 경계에서 break point가 아니어도 줄바꿈을 합니다.*/
+}
+
+
 
 /*시설명과 주소, 가격이 들어가는 영역*/
 .title-container{
@@ -73,7 +90,7 @@ hr{
 /**/
 .content,.notice-content,.time-content{
     min-height: 50px;
-    line-height: 25px;
+    line-height: 20px;
 }
 
 

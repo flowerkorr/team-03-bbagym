@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    font-family: 'LINESeedKR-Bd';
+}
 *{
     margin:0;
     padding:0;
@@ -105,5 +114,5 @@ button{
     cursor: pointer;/*버튼에 마우스 커서포인트를 이용해 손가락모양으로 변경*/
 }
 button:hover{
-    background-color: rgb(115, 131, 250);;/*hover를 이용하여 마우스 포인터가 이동했을 때 진한 색상으로 변경*/
+    background-color: rgb(115, 131, 250);/*hover를 이용하여 마우스 포인터가 이동했을 때 진한 색상으로 변경*/
 }
