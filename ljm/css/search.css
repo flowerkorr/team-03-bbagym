@@ -1,8 +1,9 @@
 *{
     margin:0;
-   
+    font-family: 'LINESeedKR-Bd';
    
 }
+
 html,body{
     width:100%;
     height:100%;
@@ -72,4 +73,10 @@ a{
     font-weight: bold;
     color: rgb(59, 59, 59);
 
+}
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
