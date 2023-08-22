@@ -71,17 +71,17 @@ li {
 li:first-child > .slide-img {
     background-image: url(/img/배너1.jpg);
     background-repeat: no-repeat;
-    background-size: 80% 100%;
+    background-size: 95% 100%;
 }
 li:nth-child(2) > .slide-img {
     background-image: url(/img/배너2.jpg);
     background-repeat: no-repeat;
-    background-size: 80% 100%;
+    background-size: 95% 100%;
 }
 li:last-child > .slide-img {
     background-image: url(/img/배너3.jpg);
     background-repeat: no-repeat;
-    background-size: 80% 100%;
+    background-size: 95% 100%;
 }
 .prev,
 .next {
