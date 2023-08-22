@@ -53,18 +53,24 @@
         .div{
             height: 9.5%;
             border-bottom: 1px solid gray;
+            display: flex;
+            align-items: center;
+           
             
 
         }
 
-        .inner-div{
+        /* .inner-div{
             padding: 10px;
-        }
+          }   */
+        
 
         .date{
             float: right;
             color: gray;
             font-weight: bold;
+            display:flex;
+            justify-content: end;
         }
         
         
@@ -80,6 +86,8 @@
 .button-div{
             height:5%;
             text-align: center;
+            display:flex;
+            justify-content: end;
         }
 
         .main-button{
@@ -88,9 +96,10 @@
         }
         a{
             text-decoration: none;
+            
         }
         .button{
-            cursor:pointer;
+                cursor:pointer; 
             
         }
         .title{
