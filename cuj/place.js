@@ -24,6 +24,8 @@ searchPlaces();
 function searchPlaces() {
 
     var keyword = document.getElementById('keyword').value;
+    // addrTitle 검색창에 입력한 값을 내보낸다(추가)
+    var addrTitle = document.getElementById('addr');
 
     if (!keyword.replace(/^\s+|\s+$/g, '')) {
         alert('키워드를 입력해주세요!');
@@ -31,7 +33,9 @@ function searchPlaces() {
     }
 
     // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
-    ps.keywordSearch( keyword, placesSearchCB); 
+    ps.keywordSearch( keyword, placesSearchCB);
+    //(추가)
+    addrTitle.innerHTML = '<span id="span-keyword">'+keyword+'</span>';
 }
 
 // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
@@ -215,4 +219,3 @@ function removeAllChildNods(el) {
         el.removeChild (el.lastChild);
     }
 }
-
