@@ -18,8 +18,11 @@ h2{
     font-weight: normal;
     padding: 2% 0 0 2%;
 }
-.inform-container{
-    /* color: gray; */
+.agree-container{
+    padding: 2%;
+}
+.agree{
+    color: gray;
 }
 .inform-text{
     padding: 10px 0 0 2%;
@@ -48,6 +51,7 @@ h2{
     font-size: 15px;
     background-color: rgb(179, 188, 255);
     color: white;
+    text-decoration: none;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -56,21 +60,50 @@ h2{
 }
 
 .kind-label{
-    /* display: flex;
-    flex-direction: row;
-    margin: 10px 0; */
+    margin: 10px 0;
 }
 .kind-check{
     display: flex;
     flex-direction: column;
     margin: 5px 1% 5px 2%;
 }
+
+.personal-inform{
+    width: 96%;
+    background-color: rgba(238, 235, 235, 0.6);
+    color: gray;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 10px 0;
+}
 h3{
     display: inline;
 }
-.agreement{
-    display: inline;
-}
+
 .kind-text{
     margin-bottom: 10px;
+}
+.agree-text{
+    font-size: 15px;
+}
+.agree-must{
+    font-size: 13px;
+    color: rgb(84, 103, 245);
+}
+
+.personal-inform{
+    font-size: 10px;
+}
+.agree-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: gray;
+    font-size: 15px;
+}
+
+.agree-all,.agree-content,.personal-inform{
+    margin: 20px 0 0 0;
 }
