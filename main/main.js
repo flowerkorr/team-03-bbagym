@@ -41,13 +41,13 @@ function checkEnd() {
 }
 
     document.querySelector('#img1').addEventListener('click', e=>{
-        window.location = 'https://blog.naver.com/dkfnal2232/223089463104?&isInf=true';
+        window.location = 'https://blog.naver.com/PostView.naver?blogId=cdwcgw1&logNo=223190223210&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=&from=menu&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=1';
     });
     document.querySelector('#img2').addEventListener('click', e=>{
-        window.location = 'https://blog.naver.com/so_younique/223136833307?&isInf=true';
+        window.location = 'https://blog.naver.com/PostView.naver?blogId=cdwcgw1&Redirect=View&logNo=223190211330&categoryNo=1&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=21158';
     });
     document.querySelector('#img3').addEventListener('click', e=>{
-        window.location = 'http://www.samsunghospital.com/dept/blogBoard/blogView.do?brd_seq=27332&DP_CODE=SCC';
+        window.location = 'https://blog.naver.com/PostView.naver?blogId=cdwcgw1&logNo=223190225561&redirect=Dlog';
     });
 
 

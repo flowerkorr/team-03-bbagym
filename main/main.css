@@ -1,6 +1,11 @@
+
 *{
     margin:0;
     padding:0;
+}
+a{
+    text-decoration: none;
+    color: #58595B;
 }
 html,body{
     width:100%;
@@ -12,11 +17,9 @@ html,body{
     background-color: white;
 
 }
-
-/*헤더 시작*/
 .header_full_box{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .header_nav{
     height: 40px;
@@ -29,8 +32,6 @@ html,body{
 .header_nav input{
     height: 35px;
     border-radius: 10px;
-    margin-top: 5px;
-    border: 1px solid gray;
 }
 /*헤더 끝*/
 
@@ -45,10 +46,9 @@ html,body{
     height: 200px;
     border: 1px solid black;
     border-radius: 15px;
-    display: flex; 
+    display: flex;  
     overflow: hidden;
     position: relative;
- 
 
 }
 .slide-box{
@@ -58,8 +58,7 @@ html,body{
     margin: 0; 
     padding: 0;
     position: absolute; 
-    left: 0px;
-  
+    left: 0px; 
 }
 li {
     list-style: none;
@@ -67,22 +66,22 @@ li {
 
 .slide-img {
     width: 1400px; /*slides-wrap 크기에 맞추기*/
-    height: 200px; /*slides-wrap 크기에 맞추기*/ 
+    height: 200px; /*slides-wrap 크기에 맞추기*/
 }
 li:first-child > .slide-img {
     background-image: url(/img/배너1.jpg);
     background-repeat: no-repeat;
-    background-size: 80% 100%;
+    background-size: 95% 100%;
 }
 li:nth-child(2) > .slide-img {
     background-image: url(/img/배너2.jpg);
     background-repeat: no-repeat;
-    background-size: 80% 100%;
+    background-size: 95% 100%;
 }
 li:last-child > .slide-img {
     background-image: url(/img/배너3.jpg);
     background-repeat: no-repeat;
-    background-size: 80% 100%;
+    background-size: 95% 100%;
 }
 .prev,
 .next {
@@ -109,7 +108,6 @@ li:last-child > .slide-img {
     margin:0 auto;
     margin-top: 10px;
     border-radius: 10px;
-    margin-bottom: 10px;
  
 }
 .input_div input{
@@ -117,7 +115,6 @@ li:last-child > .slide-img {
     width: 90%;
     border: none;
     margin-left: 5px;
-
     
 }
 .search_img{
@@ -128,13 +125,14 @@ li:last-child > .slide-img {
 /*main css*/
 .main_full{
     width: 98%;
-    height: 200px;
+    height: 250px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 10px;
     display: flex;
+    justify-content: space-around;
 }
 .main1{
-    width: 50%;
+    width: 450px;
     height: 100%;
     background-image: url(/img/내주변운동시설이미지.png);
     border-radius: 10px;
@@ -143,9 +141,10 @@ li:last-child > .slide-img {
     font-weight: bolder;
     color: #58595B;
 
+    
 }
 .main2{
-    width: 50%;
+    width: 450px;
     height: 100%;
     background-image: url(/img/지도에서\ 찾아보기.png);
     border-radius: 10px;
@@ -160,19 +159,31 @@ li:last-child > .slide-img {
     display: inline-block;
     margin-left: 5px;
 }
-.video{
-    width: 98%;
-    height: 400px;
-    margin: 0 auto;
-    position: relative;
-   
-}
 
+
+.under_icon_full{
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.under_icon{
+    width: 100px;
+    height: 80px;
+    margin-left: 10px;
+    margin: 0 auto;
+    color: #58595B;
+}
+.under_icon img{
+    width: 100%;
+    height: 100%;
+}
 
 /*아래 배너 사진 긴거*/
 .long_img{
     height: 100px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .long_img img{
    position: relative;
@@ -205,6 +216,10 @@ li:last-child > .slide-img {
     color: #58595B;
     font-size: 10px;
 }
+.personal{
+    margin-top: 10px;
+    font-weight: bolder;
+}
 
 .footer2{
     height: 180px;
@@ -213,7 +228,10 @@ li:last-child > .slide-img {
     justify-content: end;
 }
 .sns{
+   
      height: 180px;
      width: 35px;
      margin: 20px;
+
+
 }
