@@ -20,17 +20,17 @@ h2{
     padding: 2% 0 0 2%;
 }
 
-.id-container,.phone-container{
+.name-container,.id-container,.email-container{
     color: gray;
 }
-.id-text,.phone-text{
+.name-text,.id-text,.email-text{
     padding: 10px 0 0 2%;
     font-size: 15px;
 }
-.id-text{
+.name-text{
     margin: 50px 0 0 0;
 }
-.id,.phone,.find-pw-btn{
+.name,.id,.email,.find-pw-btn{
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -40,7 +40,7 @@ h2{
     font-size: 15px;
     padding: 0 2%;
 }
-.id,.phone{
+.name,.id,.email{
     width: 92%;
     background-color: rgba(238, 235, 235, 0.6);
     border: 1px solid gainsboro;
@@ -49,11 +49,16 @@ h2{
     width: 96%;
     margin-top: 40px;
     border-style: none;
-    background-color: rgb(179, 188, 255);
-    /* background-color: rgb(84, 103, 245); */
+    /* background-color: rgb(179, 188, 255); */
+    background-color: rgb(84, 103, 245);
     color: white;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.find-pw-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }

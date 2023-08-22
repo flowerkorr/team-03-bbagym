@@ -45,8 +45,7 @@ html,body{
     width: 96%;
     margin-top: 40px;
     border-style: none;
-    background-color: rgb(179, 188, 255);
-    /* background-color: rgb(84, 103, 245); */
+    background-color: rgb(84, 103, 245);
     color: white;
     font-weight: bold;
     justify-content: center;
@@ -83,4 +82,9 @@ html,body{
     font-size: 10px;
     color: gray;
     padding: 0 2% 30px 2%;
+}
+
+.login-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }

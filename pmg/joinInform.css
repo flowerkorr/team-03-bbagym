@@ -46,7 +46,7 @@ html,body{
     flex-direction: row;
     border-style: none;
     font-size: 15px;
-    background-color: rgb(179, 188, 255);
+    background-color: rgb(84, 103, 245);
     color: white;
     font-weight: bold;
     justify-content: center;
@@ -71,4 +71,9 @@ html,body{
 }
 .kind-text{
     margin-bottom: 10px;
+}
+
+.join-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }
