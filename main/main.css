@@ -129,9 +129,10 @@ li:last-child > .slide-img {
     margin: 0 auto;
     margin-top: 10px;
     display: flex;
+    justify-content: space-around;
 }
 .main1{
-    width: 50%;
+    width: 450px;
     height: 100%;
     background-image: url(/img/내주변운동시설이미지.png);
     border-radius: 10px;
@@ -139,9 +140,11 @@ li:last-child > .slide-img {
     background-size: 100% 100%;
     font-weight: bolder;
     color: #58595B;
+
+    
 }
 .main2{
-    width: 50%;
+    width: 450px;
     height: 100%;
     background-image: url(/img/지도에서\ 찾아보기.png);
     border-radius: 10px;
@@ -150,6 +153,7 @@ li:last-child > .slide-img {
     margin-left: 5px;
     font-weight: bolder;
      color: #58595B;
+
 }
 .m{
     display: inline-block;
@@ -179,6 +183,7 @@ li:last-child > .slide-img {
 .long_img{
     height: 100px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .long_img img{
    position: relative;
@@ -210,6 +215,10 @@ li:last-child > .slide-img {
 .footer1 div{
     color: #58595B;
     font-size: 10px;
+}
+.personal{
+    margin-top: 10px;
+    font-weight: bolder;
 }
 
 .footer2{

@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="/main_without_v/main_without_v.css">
+    <link rel="stylesheet" href="/main/main.css">
+    <link rel="icon" href="/img/로고.png">
+
     
 </head>
 <body>
     <div id="full_box"><!--전체 총 div-->
         <div class="header_full_box">
-            <div class="header_nav"><a href=""><img src="/img/로고.png" width="100px" height="40px"></a></div>
-            <div class="header_nav"><a href="">운동시설</a></div>
-            <div class="header_nav"><a href="">마이페이지</a></div>
-            <div class="header_nav"><a href="">공지사항</a></div>
-            <div class="header_nav"><a href="">FAQ</a></div>
+            <div class="header_nav"><a href="main.html"><img src="/img/로고.png" width="100px" height="40px"></a></div>
+            <div class="header_nav"><a href="/ljm/gymList.html">운동시설</a></div>
+            <div class="header_nav"><a href="/pmg/myPage.html">마이페이지</a></div>
+            <div class="header_nav"><a href="/nyc/announcement .html">공지사항</a></div>
+            <div class="header_nav"><a href="/nyc/FAQ.html">FAQ</a></div>
             <div class="header_nav"><input type="text" placeholder=" 어떤 서비스가 필요하세요?"></div>
-            <div class="header_nav"><a href="">로그인</a></div>
-            <div class="header_nav"><a href="">회원가입</a></div>
+            <div class="header_nav"><a href="/pmg/login.html">로그인</a></div>
+            <div class="header_nav"><a href="/pmg/joinAgree.html">회원가입</a></div>
         </div><!--header-->
 
         <div class="main_banner"><!--banner-->
@@ -51,13 +53,17 @@
         
         <!--Main-->
         <div class="main_full"><!--main div1-->
-            <div class="main1">
-                <a href=""><span class="m">내주변 운동시설</span></a>
-            </div>
+            <a href="/ljm/gymList.html">
+              <div class="main1">
+              <span class="m">내주변 운동시설</span>
+              </div>
+             </a>
 
-            <div class="main2"><!--main div2-->
-                <a href=""><span class="m">지도에서 찾아보기</span></a>
-            </div>
+            <a href="/cuj/place.html">
+                <div class="main2"><!--main div2-->
+                <span class="m">지도에서 찾아보기</span>
+                </div>
+             </a>
         </div>
 
         <div class="under_icon_full"><!--under icon-->
@@ -79,14 +85,21 @@
             <img src="/img/글없는아래 사진.png">
         </div>
 
+        <div class="video">
+            <iframe width=100% height="400px" src="https://www.youtube.com/embed/5eMhsNZ2N58" title="YouTube video player" frameborder="0"></iframe> 
+          </div>
+
+
+
         <div class="footer_full_div"><!--footer-->
             <div class="footer1"> <!--footer div1-->
                 <div>
                     <img src="/img/로고.png" style="margin-bottom: 10px;"></div>
-                <div class="name">(주)코리아아이티학원</div>
-                <div>서울특별시 노원구 상계로1길 34 세일학원 5층 </div>
-                <div>대표이사 : 이민진</div>
+                <div class="name">살빼조</div>
+                <div>서울특별시 노원구 상계로1길 </div>
+                <div>장민지|이종민|최욱진|나윤찬|박민규</div>
                 <div>이메일 : bbagym@gmail.com | 사업 및 제휴문의 : bbagym@gmail.com</div>
+                <div class="personal"><a href="https://www.law.go.kr/LSW/lsInfoP.do?efYd=20200805&lsiSeq=213857#0000">개인정보방침</div></a>
             </div>
 
             <div class="footer2"><!--footer div2-->
@@ -112,5 +125,5 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-<script src="/main_without_v/main_without_v.js"></script>
+<script src="/main/main.js"></script>
 </html>
