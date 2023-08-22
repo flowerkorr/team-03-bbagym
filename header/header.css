@@ -25,6 +25,7 @@ html,body{
     top:0;
     left:20%;
     z-index: 1;
+    border-bottom:1px solid rgba(238, 235, 235,0.7);
 
 }
 .header_nav{
