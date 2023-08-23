@@ -219,3 +219,7 @@ function removeAllChildNods(el) {
         el.removeChild (el.lastChild);
     }
 }
+
+function all_reset(){
+    document.form.reset();
+    }
