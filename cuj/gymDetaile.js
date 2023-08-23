@@ -44,4 +44,12 @@ geocoder.addressSearch(addr, function(result, status) {
         // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
         map.setCenter(coords);
     } 
-});   
+});
+
+
+var plus = document.getElementById("comments-btn");
+
+plus.addEventListener('click',function(){
+    var show = document.getElementById("rm")
+    show.style.display = "";
+})
