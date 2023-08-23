@@ -1,3 +1,37 @@
+var $inputs = $(".inform");
+var $must = $(".must");
+var $plus = $(".plus");
+var $contain = $(".business-container");
+var $common = $(".common");
+var $regist = $(".regist");
+var $btn = $(".join-btn");
+
+$regist.on('click', function(){
+    $contain.css('display', 'block');
+});
+
+$common.on('click', function(){
+    $contain.css('display', 'none');
+    $plus.val('');
+});
+
+// $inputs.on('keyup', function(){
+//     if($must.val() == ''){
+//         if($common.is(":checked")){
+//             $btn.prop('disabled', false);
+//         }
+//         if($regist.is(":checked")){
+//             if($plus.val() == ''){
+//                 $btn.prop('disabled', true);
+//             }else{
+//                 $btn.prop('disabled', false);
+//             }
+//         }
+//     }else{
+//         $btn.prop('disabled', true);
+//     }
+// });
+
 var inputId = document.querySelector('#id');
 var inputPw = document.querySelector('#pw');
 var checkPw = document.querySelector('#pw-check');
@@ -20,13 +54,13 @@ radioRegist.addEventListener('checked', activeEvent);
 inputBusiness.addEventListener('keyup', activeEvent);
 // findIdBtn.addEventListener('click', errorEvent);
 
-var business = document.getElementById("business-container");
-function hide(){
-    business.classList.remove("show");
-}
-function show(){
-    business.classList.add("show");
-}
+// var business = document.getElementById("business-container");
+// function hide(){
+//     business.classList.remove("show");
+// }
+// function show(){
+//     business.classList.add("show");
+// }
 
 function activeEvent() {
     if (radioRegist.value) {
