@@ -15,17 +15,20 @@
         <form action="">
             <div class="name-container">
                 <div class="name-text">이름</div>
-                <input type="text" placeholder="이름을 입력해 주세요." class="name">
+                <input type="text" placeholder="이름을 입력해 주세요." class="name" id="name">
             </div>
             <div class="id-container">
                 <div class="id-text">아이디</div>
-                <input type="text" placeholder="아이디를 입력해 주세요." class="id">
+                <input type="text" placeholder="아이디를 입력해 주세요." class="id" id="id">
             </div>
             <div class="email-container">
                 <div class="email-text">이메일</div>
-                <input type="email" placeholder="bbagym@bbagym.co.kr" class="email">
+                <input type="email" placeholder="bbagym@bbagym.co.kr" class="email" id="email">
             </div>
-            <input type="submit" value="비밀번호 찾기" class="find-pw-btn" disabled>
+            <div class="pw-container show" id="pw-container">
+                <h3>1234!</h3>
+            </div>
+            <input type="submit" value="비밀번호 찾기" class="find-pw-btn" id="find-pw-btn" onclick="show()" disabled>
         </form>
     </div>
     <script src="findPw.js"></script>

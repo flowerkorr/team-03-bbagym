@@ -19,14 +19,14 @@ html,body{
     display: flex;
     padding: 2%;
 }
-.id-container,.password-container{
+.id-container,.pw-container{
     color: gray;
 }
-.id-text,.password-text{
+.id-text,.pw-text{
     padding: 10px 0 0 2%;
     font-size: 15px;
 }
-.id,.password,.login-btn{
+.id,.pw,.login-btn{
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@ html,body{
     font-size: 15px;
     padding: 0 2%;
 }
-.id,.password{
+.id,.pw{
     width: 92%;
     background-color: rgba(238, 235, 235, 0.6);
     border: 1px solid gainsboro;
@@ -51,6 +51,10 @@ html,body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.login-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .find-container{
@@ -82,9 +86,4 @@ html,body{
     font-size: 10px;
     color: gray;
     padding: 0 2% 30px 2%;
-}
-
-.login-btn:disabled{
-    opacity: 0.5;
-    cursor: not-allowed;
 }

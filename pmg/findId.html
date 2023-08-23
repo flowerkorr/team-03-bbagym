@@ -15,13 +15,16 @@
         <form action="">
             <div class="name-container">
                 <div class="name-text">이름</div>
-                <input type="text" placeholder="이름을 입력해주세요." class="name">
+                <input type="text" placeholder="이름을 입력해주세요." class="name" id="name">
             </div>
             <div class="email-container">
-                <div class="email-text">이름</div>
-                <input type="email" placeholder="bbagym@bbagym.co.kr" class="email">
+                <div class="email-text">이메일</div>
+                <input type="email" placeholder="bbagym@bbagym.co.kr" class="email" id="email">
             </div>
-            <input type="submit" value="아이디 찾기" class="find-id-btn" disabled>
+            <div class="id-container show" id="id-container">
+                <h3>bbagym1234</h3>
+            </div>
+            <input type="submit" value="아이디 찾기" class="find-id-btn" id="find-id-btn" onclick="show()" disabled>
         </form>
     </div>
     <script src="findId.js"></script>

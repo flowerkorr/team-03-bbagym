@@ -18,7 +18,7 @@ html,body{
     display: flex;
     padding: 2%;
 }
-.inform-container{
+.inform-container,.business-container{
     color: gray;
 }
 .inform-text{
@@ -76,4 +76,8 @@ html,body{
 .join-btn:disabled{
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+.show{
+    display: none;
 }
