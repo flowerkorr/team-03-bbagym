@@ -76,5 +76,5 @@ comm.addEventListener('click',function(){
 
 var rmbtn = document.getElementById('rm-btn')
 rmbtn.addEventListener('click',function(){
-    confirm('정말 삭제하시겠습니까?');
+    confirm('정말 댓글을 삭제하시겠습니까?');
 })
