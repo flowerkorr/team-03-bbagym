@@ -44,4 +44,37 @@ geocoder.addressSearch(addr, function(result, status) {
         // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
         map.setCenter(coords);
     } 
-});   
+});
+
+
+var plus = document.getElementById("comments-btn");
+var show = document.getElementById("rm")
+plus.addEventListener('click',function(){
+    if(show.style.display != 'flex'){
+        show.style.display = 'flex';
+    }else {
+        show.style.display = 'none';
+      }
+})
+
+var comm = document.getElementById('comm-btn');
+var view = document.getElementById('comm-none');
+var up = document.getElementById('up');
+var down = document.getElementById('down');
+
+comm.addEventListener('click',function(){
+    if(view.style.display != 'flex'){
+        view.style.display = 'flex';
+        up.style.display = 'inline'
+        down.style.display = 'none'
+    }else{
+        view.style.display = 'none';
+        up.style.display = 'none'
+        down.style.display = 'inline'
+    }
+})
+
+var rmbtn = document.getElementById('rm-btn')
+rmbtn.addEventListener('click',function(){
+    confirm('정말 댓글을 삭제하시겠습니까?');
+})
