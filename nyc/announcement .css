@@ -89,7 +89,7 @@
             height:5%;
             text-align: center;
             display:flex;
-            justify-content: end;
+            float:right;
         }
 
         .main-button{
@@ -100,10 +100,7 @@
             text-decoration: none;
             
         }
-        .button{
-                cursor:pointer; 
-            
-        }
+        
         .title{
             text-align: center;
         
@@ -111,4 +108,18 @@
         
         .date-div{
             padding: 15px;
+        }
+
+        button{
+            width: 100px;
+            height: 30px;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(127, 142, 251);
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(115, 131, 250);
         }
