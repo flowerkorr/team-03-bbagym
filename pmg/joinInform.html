@@ -9,50 +9,51 @@
 </head>
 <body>
     <div class="container">
-        <a href="">
+        <a href="/main/main.html">
             <img src="logo.png" class="logo" />
         </a>
         <form action="login.html">
             <div class="inform-container">
                 <div class="inform-text">아이디</div>
-                <input type="text" placeholder="아이디를 입력해주세요" class="inform" id="id">
+                <input type="text" placeholder="아이디를 입력해주세요" class="inform must" id="id">
             </div>
             <div class="inform-container">
                 <div class="inform-text">비밀번호</div>
-                <input type="password" placeholder="비밀번호를 입력해주세요." class="inform" id="pw">
+                <input type="password" placeholder="비밀번호를 입력해주세요." class="inform must" id="pw">
             </div>
             <div class="infrom-container">
                 <div class="inform-text">비밀번호 확인</div>
-                <input type="password" placeholder="다시 한번 비밀번호를 입력해 주세요." class="inform" id="pw-check">
+                <input type="password" placeholder="다시 한번 비밀번호를 입력해 주세요." class="inform must" id="pw-check">
             </div>
             <div class="inform-container">
                 <div class="inform-text">이름</div>
-                <input type="text" placeholder="이름을 입력해 주세요." class="inform" id="name">
+                <input type="text" placeholder="이름을 입력해 주세요." class="inform must" id="name">
             </div>
             <div class="inform-container">
                 <div class="inform-text">휴대폰 번호</div>
-                <input type="text" placeholder="-없이 입력해 주세요." class="inform" id="phone">
+                <input type="text" placeholder="-없이 입력해 주세요." class="inform must" id="phone">
             </div>
             <div class="inform-container">
                 <div class="inform-text">이메일</div>
-                <input type="text" placeholder="bbagym@bbagym.co.kr" class="inform" id="email">
+                <input type="text" placeholder="bbagym@bbagym.co.kr" class="inform must" id="email">
             </div>
             <div class="inform-container">
                 <div class="inform-text">회원분류</div>
                 <label for="" class="kind-label">
-                    <input type="radio" name="kind" value="common" class="kind-check" id="common" onclick="show()" checked>
+                    <input type="radio" name="kind" value="common" class="kind-check common" id="common" checked>
                     <div class="kind">일반회원</div>
-                    <input type="radio" name="kind" value="registrant" class="kind-check" id="registrant" onclick="hide()">
+                    <input type="radio" name="kind" value="registrant" class="kind-check regist" id="registrant">
                     <div class="kind">시설등록자</div>
                 </label>
             </div>
-            <div class="business-container show" id="business-container">
+            <div class="business-container" id="business-container">
                 <div class="inform-text">사업자 번호</div>
-                <input type="text" placeholder="-없이 입력해 주세요." class="inform" id="business">
+                <input type="text" placeholder="-없이 입력해 주세요." class="inform plus" id="business">
             </div>
             <input type="submit" value="가입완료" class="join-btn" id="join-btn" disabled>
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="joinInform.js"></script>
 </body>
 </html>
